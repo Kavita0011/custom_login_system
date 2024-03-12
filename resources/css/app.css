@@ -1,0 +1,8 @@
+/* css for all pages */
+/* container */
+.container{
+    padding:5px;
+    margin:0px auto;
+    box-sizing: border-box;
+}
+
