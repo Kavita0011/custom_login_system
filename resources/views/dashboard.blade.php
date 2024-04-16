@@ -9,17 +9,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- custom css link -->
     <link rel="stylesheet" href="../css/app.css">
-    <!-- additional css for table -->
-    <style>
-        th,
-        td {
-            padding: 10px;
-        }
-
-        .btn {
-            background-color: whitesmoke;
-        }
-    </style>
     <title>Dashboard</title>
 </head>
 
@@ -28,11 +17,11 @@
     <div class="container">
         <!-- welcoming user through session -->
         <div class="container">
-            <h2>Welcome {{$data->user_name}}</h2>
+            <h2>Hello {{$data->user_name}}</h2>
         </div>
         <!-- start of contianer for table -->
         <div class="container">
-            <!-- start of table -->
+            {{-- <!-- start of table -->
             <table border="1px">
                 <tr>
                     <!--start of data heading -->
@@ -50,14 +39,14 @@
                     <td>{{$data->user_password}}</td>
                     <!--end of data of logged in user will be shown -->
                     </tr>
-            </table>
+            </table> --}}
             <!-- end of table -->
         </div>
         <!-- end of contianer for table -->
         <!-- start of contianer for logout button -->
         <div class="container">
             <!--button to logout  -->
-            <button type="button" class="btn btn-primary"><a href="logout">logout</a>
+            <button type="button" class="btn btn-danger"><a href="logout">logout</a>
             </button>
         </div>
         <!-- end of contianer for logout button -->
