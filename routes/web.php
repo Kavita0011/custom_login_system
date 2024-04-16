@@ -15,14 +15,14 @@ use Illuminate\Support\Facades\Route;
 */
 // start of routing
 Route::get('/', function () {
-    return redirect('login');
+    return redirect('index');
 });
 // route for dashboard
 Route::get('dashboard',[user_authenticate::class,'dashboard'])->middleware('is_logged_in');
 // route for login and register
 Route::post('user_login',[user_authenticate::class,'user_login']);
 Route::post('user_register',[user_authenticate::class,'user_register']);
-Route::get('login',[user_authenticate::class,'login'])->middleware('already_logged_in');
-Route::get('register',[user_authenticate::class,'register'])->middleware('already_logged_in');
+Route::get('index',[user_authenticate::class,'login'])->middleware('already_logged_in');
+Route::get('register',[user_authenticate::class,'register']);
 Route::get('/logout',[user_authenticate::class,'logout']);
 // end of routing

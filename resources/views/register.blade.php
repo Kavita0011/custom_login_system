@@ -58,7 +58,7 @@
         <!-- end of user password field block -->
             <button type="submit" class="btn btn-primary">Submit</button>
             <!-- login page link -->
-                <div class="container"><a href="/login">New user !! login here</a></div>
+                <div class="container"><a href="/index">New user !! login here</a></div>
               </form>
               <!-- end of register form -->
         </div>

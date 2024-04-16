@@ -12,7 +12,7 @@ class user_authenticate extends Controller
     //login function will return login page
     public function login()
     {
-        return view('login');
+        return view('index');
     }
     //register function will return register page
     public function register()
@@ -92,7 +92,7 @@ class user_authenticate extends Controller
     {
         if (Session::has('loginId')) {
             Session::pull('loginId');
-            return redirect("login");
+            return redirect("index");
         }
     }
     // end of logout functon 
