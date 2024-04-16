@@ -24,5 +24,5 @@ Route::post('user_login',[user_authenticate::class,'user_login']);
 Route::post('user_register',[user_authenticate::class,'user_register']);
 Route::get('login',[user_authenticate::class,'login'])->middleware('already_logged_in');
 Route::get('register',[user_authenticate::class,'register']);
-
+Route::get('/logout',[user_authenticate::class,'logout']);
 // end of routing
